@@ -1,0 +1,32 @@
+#title {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 4rem;
+}
+
+@media only screen and (min-width: 600px) and (orientation: portrait) {
+  #title {
+    width: 95vw;
+    margin-left: 2.5vw;
+    margin-top: 4rem;
+  }
+}
+
+
+#title > * {
+  text-align: center;
+  margin: 1rem;
+}
+
+h1 {
+  font-weight: var(--font_weight_medium);
+  font-size: 4rem;
+}
+
+.bold {
+  font-weight: var(--font_weight_bold);
+}
+
+#title > p {
+  font-size: 1rem;
+}

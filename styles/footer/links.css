@@ -1,0 +1,23 @@
+.footer_links {
+  background-color: var(--grey_dark);
+  border-radius: 2rem 2rem 0 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey_medium);
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.footer_links > div > a {
+ display: block;
+ text-decoration: underline;
+ color: var(--grey_light);
+}
+
+@media only screen and (min-width: 600px) and (orientation: portrait) {
+  .footer_links {
+    flex-direction: column;
+    line-height: 1.3rem;
+  }
+}

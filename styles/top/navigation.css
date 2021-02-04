@@ -1,0 +1,55 @@
+div#navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a.button {
+  font-size: 1.25rem;
+  color: inherit;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1rem 0.4rem 1rem;
+  margin: 1rem;
+  transition-property: color, fill, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.button > svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  display: inline;
+  vertical-align: top;
+  margin-left: 0.7rem;
+  margin-top: -0.1rem;
+}
+
+a.button.github {
+  fill: white;
+  color: white;
+  background-color: black;
+}
+
+a.button.github:hover {
+  fill: black;
+  color: black;
+  background-color: var(--grey_light);
+}
+
+a.button.map {
+  fill: var(--purple_light);
+  color: var(--purple_light);
+  background-color: white;
+}
+
+a.button.map > svg {
+  transform: scale(1.2, 1.2);
+}
+
+a.button.map:hover {
+  fill: white;
+  color: white;
+  background-color: var(--purple);
+}
