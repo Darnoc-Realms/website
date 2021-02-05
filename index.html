@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/top/invite.css">
 
   <link rel="stylesheet" href="styles/content/header.css">
+  <link rel="stylesheet" href="styles/content/member_list.css">
 
   <link rel="stylesheet" href="styles/footer/links.css">
   <!-- zoom -->
@@ -64,19 +65,45 @@
         <h2>Server Members <span id="member_count">(1/45 Online)</span></h2>
       </div>
       <div id="member_list">
-        <!-- DOM create players from api
-        <div>
-          <image>avatar</image>
-          <div>
-            <h2>venashial</h2>
-            <div class="badge grey">ADMIN</div>
-            <div class="badge purple">MEMBER</div>
-          </div>
-          <div>
-            <div class="status"><span class="online">•</span>Playing on server</div>
-            <div class="join_date"><span class="small">Joined</span>1.2 years ago</div>
-          </div>
-        </div> -->
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img class="player_avatar" src="https://mc-heads.net/avatar/venashial">
+              </td>
+              <td class="name_and_badge">
+                <h4>venashial</h4>
+                <div class="badge grey">ADMIN</div>
+                <div class="badge purple">MEMBER</div>
+              </td>
+              <td>
+                <div class="status"><span class="status_dot ingame">•</span>Playing on server</div>
+              </td>
+              <td>
+                <div class="join_date">
+                  <p><span class="small">Joined</span><br>1.2 years ago</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="player_avatar" src="https://mc-heads.net/avatar/thunderboltt">
+              </td>
+              <td class="name_and_badge">
+                <h4>thunderboltt</h4>
+                <div class="badge purple">MEMBER</div>
+              </td>
+              <td>
+                <div class="status"><span class="status_dot online">•</span>Online</div>
+              </td>
+              <td>
+                <div class="join_date">
+                  <p><span class="small">Joined</span><br>1.2 years ago</p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="header">
         <h2>Steps to Join</h2>
@@ -118,33 +145,34 @@
 
     <div id="footer">
       <div class="footer_links">
-      <div>
-        <p>APIs</p>
-        <a href="https://api.darnoc-realms.ml/v1/members">api.darnoc-realms.ml/v1/members</a>
-        <a href="https://api.darnoc-realms.ml/v1/world">api.darnoc-realms.ml/v1/world</a>
-        <a href="https://api.darnoc-realms.ml/v1/backups">api.darnoc-realms.ml/v1/backups</a>
-        <a href="https://api.darnoc-realms.ml/v1/discord">api.darnoc-realms.ml/v1/discord</a>
-        <a href="https://api.darnoc-realms.ml/v1/server">api.darnoc-realms.ml/v1/server</a>
-      </div>
-      <div>
-        <p>Source Code</p>
-        <a>links...</a>
-        <a>links...</a>
-        <a>links...</a>
-      </div>
-      <div>
-        <p>Report Issues</p>
-        <a>links...</a>
-        <a>links...</a>
-        <a>links...</a>
-      </div>
-      <div>
-        <p>Help</p>
-        <a href="https://discord.gg/vFW62D9">Discord</a>
-        <a href="mailto:admin@darnoc-realms.ml">Email</a>
+        <div>
+          <p>APIs</p>
+          <a href="https://api.darnoc-realms.ml/v1/members">api.darnoc-realms.ml/v1/members</a>
+          <a href="https://api.darnoc-realms.ml/v1/world">api.darnoc-realms.ml/v1/world</a>
+          <a href="https://api.darnoc-realms.ml/v1/backups">api.darnoc-realms.ml/v1/backups</a>
+          <a href="https://api.darnoc-realms.ml/v1/discord">api.darnoc-realms.ml/v1/discord</a>
+          <a href="https://api.darnoc-realms.ml/v1/server">api.darnoc-realms.ml/v1/server</a>
+        </div>
+        <div>
+          <p>Source Code</p>
+          <a href="https://github.com/Darnoc-Realms/website">github.com/darnoc-realms/website</a>
+          <a href="https://github.com/Darnoc-Realms/coeus">github.com/darnoc-realms/coeus</a>
+          <a href="https://github.com/Darnoc-Realms/api">github.com/darnoc-realms/api</a>
+        </div>
+        <div>
+          <p>Report Issues</p>
+          <a href="https://github.com/Darnoc-Realms/website/issues">Website</a>
+          <a href="https://github.com/Darnoc-Realms/coeus/issues">Coeus (Discord bot)</a>
+          <a href="https://github.com/Darnoc-Realms/api/issues">API</a>
+        </div>
+        <div>
+          <p>Help</p>
+          <a href="https://discord.gg/vFW62D9">Discord</a>
+          <a href="mailto:admin@darnoc-realms.ml">Email</a>
+        </div>
       </div>
     </div>
-  </div>
+    <script> </script> <!-- to stop css animation flash on page load -->
 </body>
 
 </html>

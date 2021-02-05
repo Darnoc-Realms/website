@@ -1,10 +1,11 @@
 h2 {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: var(--font_weight_medium);
 }
 
 #member_count {
-  font-weight: var(--font_weight_medium);
+  font-weight: var(--font_weight_thin);
   color: var(--grey_light);
   text-transform: none;
 }

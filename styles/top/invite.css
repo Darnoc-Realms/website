@@ -14,6 +14,7 @@ img.icon {
   border-radius: 1rem;
   width: 4rem;
   height: 4rem;
+  image-rendering: crisp-edges;
 }
 
 h5, #invitation>div>div>p {

@@ -1,7 +1,7 @@
 .footer_links {
   background-color: var(--grey_dark);
   border-radius: 2rem 2rem 0 0;
-  padding: 1rem;
+  padding: 2rem 3rem 1rem 3rem;
   display: flex;
   justify-content: space-between;
   color: var(--grey_medium);
@@ -13,6 +13,15 @@
  display: block;
  text-decoration: underline;
  color: var(--grey_light);
+ transition: color 0.2s ease-in-out;
+}
+
+.footer_links > div > p {
+  margin-bottom: 0.5rem;
+}
+
+.footer_links > div > a:hover {
+  color: white;
 }
 
 @media only screen and (min-width: 600px) and (orientation: portrait) {
