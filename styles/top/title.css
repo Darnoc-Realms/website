@@ -4,14 +4,6 @@
   margin-top: 4rem;
 }
 
-@media only screen and (min-width: 600px) and (orientation: portrait) {
-  #title {
-    width: 95vw;
-    margin-left: 2.5vw;
-    margin-top: 4rem;
-  }
-}
-
 
 #title > * {
   text-align: center;
@@ -29,4 +21,16 @@ h1 {
 
 #title > p {
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 750px) and (orientation: portrait) {
+  #title {
+    width: 95vw;
+    margin-left: 2.5vw;
+    margin-top: 4rem;
+  }
+
+  h1 {
+  font-size: 2.2rem;
+  }
 }

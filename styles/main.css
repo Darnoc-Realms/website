@@ -24,6 +24,7 @@ html, body {
   background-color: var(--bg_color);
   font-size: 20px;
   font-family: var(--font_family);
+  overflow-x: hidden;
 }
 
 p {
@@ -32,7 +33,7 @@ p {
 
 .short { display: none; }
 
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (max-width: 800px) and (orientation: portrait) {
   .short { display: inline-block; }
   .full { display: none; }
 }
@@ -50,13 +51,11 @@ p {
 #content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: flex-start;
-  margin: 1rem 0 1rem 0;
+  align-items: center;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
-#content, #footer {
-  width: 90vw;
-  margin-left: 5vw;
+#footer {
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
 }

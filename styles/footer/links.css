@@ -9,6 +9,10 @@
   line-height: 1rem;
 }
 
+.footer_links > div {
+  margin: 1rem;
+}
+
 .footer_links > div > a {
  display: block;
  text-decoration: underline;
@@ -24,7 +28,14 @@
   color: white;
 }
 
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (max-width: 950px) {
+  .footer_links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 700px) and (orientation: portrait) {
   .footer_links {
     flex-direction: column;
     line-height: 1.3rem;

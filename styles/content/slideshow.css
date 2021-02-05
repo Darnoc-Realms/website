@@ -1,3 +1,7 @@
+#slideshow {
+  overflow: hidden;
+}
+
 #slideshow > svg {
   stroke: white;
   fill: none;
@@ -28,4 +32,23 @@
 #carousel > div > div > div > img {
   width: 30rem;
   border-radius: 1rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 700px) and (orientation: portrait) {
+  #slideshow {
+    width: 100%;
+  }
+
+  #carousel > div > div > div > img {
+    width: 100%;
+  }
+
+  #slideshow > svg {
+    top: -30vw;
+  }
+
+  .next {
+  margin-left: 80%;
+  }
 }

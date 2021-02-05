@@ -2,6 +2,13 @@
     width: 30rem;
 }
 
+@media only screen and (max-width: 700px) and (orientation: portrait) {
+  #steps {
+    width: 100%;
+  }
+}
+
+
 .step {
   background-color: var(--grey_container);
   border-radius: 1rem;
@@ -45,7 +52,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.2rem;
 }
 
 .discord_join_outer > a.button {
@@ -53,7 +59,7 @@
   width: calc(100% - 3rem);
   height: 1rem;
   text-align: center;
-  margin-right: 0;
+  margin: 0;
 }
 
 .step > img {

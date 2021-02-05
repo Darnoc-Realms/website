@@ -2,6 +2,8 @@ h2 {
   text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: var(--font_weight_medium);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 #member_count {

@@ -78,7 +78,6 @@ h4 {
 
 .status {
   font-size: 0.8rem;
-  justify-self: end;
 }
 
 .status > .status_dot {
@@ -91,6 +90,11 @@ h4 {
   animation-name: orange_yellow_pulse;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+.badges {
+  display: flex;
+flex-direction: row;
 }
 
 @keyframes orange_yellow_pulse {
@@ -113,9 +117,53 @@ h4 {
   font-size: 0.7rem;
   margin-left: 0.5rem;
   font-weight: var(--font_weight_thin);
-  justify-self: end;
 }
 
 span.small {
   font-size: 0.55rem;
+}
+
+@media only screen and (max-width: 700px) and (orientation: portrait) {
+  #member_list, #member_list > table {
+    width: 100%;
+  }
+
+  div.name_and_badge {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1rem;
+  }
+
+  div.badge {
+  border-radius: 0.8rem;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+  height: 0.7rem;
+  padding: 0.2rem 0.3rem 0rem 0.3rem;
+  margin: 0.2rem;
+  margin-top: 0;
+  }
+
+  td {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+td:first-child {
+  padding-left: 0.5rem;
+  padding-right: 0;
+}
+}
+
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+  h4 {
+    margin: 0.1rem;
+    font-size: 0.8rem;
+  }
+
+
+  .join_date {
+    display: none;
+  }
 }
