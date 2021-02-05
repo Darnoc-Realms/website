@@ -3,6 +3,8 @@
   --bg_color: #2C2F33;
   --purple: #6A1B84;
   --purple_light: #79328E;
+  --purple_dark: #3C134D;
+  --grey_white: #EBEBEB;
   --grey_light: #A7A7A7;
   --grey_medium: #EAEAEA;
   --grey_dark: rgba(31, 31, 31, 0.8);
@@ -31,10 +33,6 @@ p {
 .short { display: none; }
 
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  html, body {
-    font-size: 30px;
-  }
-
   .short { display: inline-block; }
   .full { display: none; }
 }

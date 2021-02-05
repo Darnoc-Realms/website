@@ -1,10 +1,12 @@
 #member_list {
   background-color: var(--grey_container);
   border-radius: 1rem;
+    width: 30rem;
 }
 
 #member_list > table {
   border-collapse: collapse;
+      width: 30rem;
 }
 
 #member_list > table > tbody > tr {
@@ -15,18 +17,28 @@
   border-bottom: none;
 }
 
-.player_avatar {
+td {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+td:first-child {
+  padding-left: 0.5rem;
+  padding-right: 0;
+}
+
+img.player_avatar {
   width: 2rem;
   height: 2rem;
   border-radius: 0.2rem;
-  margin: 0.4rem;
-  margin-left: 0.6rem;
 }
 
-#member_list > div > div {
+div.name_and_badge {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 1rem;
 }
 
 div.badge {
@@ -49,6 +61,14 @@ div.badge {
 
 .purple {
   background-color: #4E3BF4;
+}
+
+.green {
+  background-color: #14843F;
+}
+
+.orange {
+  background-color: #8E4F10;
 }
 
 h4 {
@@ -85,9 +105,13 @@ h4 {
   }
 }
 
+.offline {
+  color: #5A5A5A;
+}
+
 .join_date {
   font-size: 0.7rem;
-  margin: 0.5rem;
+  margin-left: 0.5rem;
   font-weight: var(--font_weight_thin);
   justify-self: end;
 }

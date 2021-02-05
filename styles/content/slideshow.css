@@ -1,0 +1,31 @@
+#slideshow > svg {
+  stroke: white;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  width: 1rem;
+  height: 2rem;
+  filter: drop-shadow( 0 0 1rem rgba(0, 0, 0, 0.9));
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  top: -9rem;
+}
+
+.prev {
+  margin-left: 1rem;
+}
+
+.next {
+  margin-left: 85%;
+  transform: rotate(180deg);
+}
+
+#carousel {
+  border-radius: 1rem;
+}
+
+#carousel > div > div > div > img {
+  width: 30rem;
+  border-radius: 1rem;
+}

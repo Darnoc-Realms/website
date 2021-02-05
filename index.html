@@ -2,26 +2,60 @@
 <html>
 
 <head>
-  <!-- Meta -->
-  <meta charset="UTF-8">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/fonts.css">
-  <link rel="stylesheet" href="styles/main.css">
+  <head>
+    <title>Darnoc Realms</title>
 
-  <link rel="stylesheet" href="styles/top/navigation.css">
-  <link rel="stylesheet" href="styles/top/title.css">
-  <link rel="stylesheet" href="styles/top/invite.css">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-  <link rel="stylesheet" href="styles/content/header.css">
-  <link rel="stylesheet" href="styles/content/member_list.css">
 
-  <link rel="stylesheet" href="styles/footer/links.css">
-  <!-- zoom -->
-  <!-- icons -->
-  <!-- open graph -->
-</head>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/top/navigation.css">
+    <link rel="stylesheet" href="styles/top/title.css">
+    <link rel="stylesheet" href="styles/top/invite.css">
+
+    <link rel="stylesheet" href="styles/content/header.css">
+    <link rel="stylesheet" href="styles/content/member_list.css">
+    <link rel="stylesheet" href="styles/content/steps.css">
+    <link rel="stylesheet" href="styles/content/slideshow.css">
+    <link rel="stylesheet" href="styles/content/map_link.css">
+
+    <link rel="stylesheet" href="styles/footer/links.css">
+
+    <!-- Scripts -->
+    <script src="./scripts/imports/siema.min.js"></script>
+
+
+    <!-- Favicon Stuffs -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/_favicons/apple-touch-icon.png?v=lkv9oMRXnj">
+    <link rel="icon" type="image/png" sizes="32x32" href="/_favicons/favicon-32x32.png?v=lkv9oMRXnj">
+    <link rel="icon" type="image/png" sizes="16x16" href="/_favicons/favicon-16x16.png?v=lkv9oMRXnj">
+    <link rel="manifest" href="/_favicons/site.webmanifest?v=lkv9oMRXnj">
+    <link rel="mask-icon" href="/_favicons/safari-pinned-tab.svg?v=lkv9oMRXnj" color="#4f0e66">
+    <link rel="shortcut icon" href="/_favicons/favicon.ico?v=lkv9oMRXnj">
+    <meta name="apple-mobile-web-app-title" content="Darnoc Realms">
+    <meta name="application-name" content="Darnoc Realms">
+    <meta name="msapplication-TileColor" content="#5E22CA">
+    <meta name="msapplication-config" content="/_favicons/browserconfig.xml?v=lkv9oMRXnj">
+    <meta name="theme-color" content="#5E22CA">
+
+
+    <!-- SEO Stuff -->
+    <meta property="og:title" content="Welcome to Darnoc Realms">
+    <meta property="og:site_name" content="Darnoc Realms">
+    <meta property="og:description" content="Darnoc Realms is a SMP Minecraft server. Find out more on our website!">
+    <meta property="og:image" content="https://www.darnoc-realms.ml/assets/icon_bordless.png">
+    <meta property="og:url" content="https://www.darnoc-realms.ml/">
+    <meta name="twitter:card" content="summary">
+  </head>
 
 <body>
   <div id="root">
@@ -62,22 +96,24 @@
 
     <div id="content">
       <div class="header">
-        <h2>Server Members <span id="member_count">(1/45 Online)</span></h2>
+        <h2>Server Members <span id="member_count">(2/3 Online)</span></h2>
       </div>
       <div id="member_list">
         <table>
           <tbody>
             <tr>
               <td>
-                <img class="player_avatar" src="https://mc-heads.net/avatar/venashial">
-              </td>
-              <td class="name_and_badge">
-                <h4>venashial</h4>
-                <div class="badge grey">ADMIN</div>
-                <div class="badge purple">MEMBER</div>
+                <img class="player_avatar" src="https://mc-heads.net/avatar/venashial" loading="lazy">
               </td>
               <td>
-                <div class="status"><span class="status_dot ingame">•</span>Playing on server</div>
+                <div class="name_and_badge">
+                  <h4>venashial</h4>
+                  <div class="badge grey">ADMIN</div>
+                  <div class="badge purple">MEMBER</div>
+                </div>
+              </td>
+              <td>
+                <div class="status"><span class="status_dot ingame">•</span>In-game</div>
               </td>
               <td>
                 <div class="join_date">
@@ -87,18 +123,39 @@
             </tr>
             <tr>
               <td>
-                <img class="player_avatar" src="https://mc-heads.net/avatar/thunderboltt">
+                <img class="player_avatar" src="https://mc-heads.net/avatar/thunderboltt" loading="lazy">
               </td>
-              <td class="name_and_badge">
-                <h4>thunderboltt</h4>
-                <div class="badge purple">MEMBER</div>
+              <td>
+                <div class="name_and_badge">
+                  <h4>thunderboltt</h4>
+                  <div class="badge purple">MEMBER</div>
+                </div>
               </td>
               <td>
                 <div class="status"><span class="status_dot online">•</span>Online</div>
               </td>
               <td>
                 <div class="join_date">
-                  <p><span class="small">Joined</span><br>1.2 years ago</p>
+                  <p><span class="small">Joined</span><br>4 months ago</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="player_avatar" src="https://mc-heads.net/avatar/jprentice" loading="lazy">
+              </td>
+              <td>
+                <div class="name_and_badge">
+                  <h4>jprentice</h4>
+                  <div class="badge green">JOINING</div>
+                </div>
+              </td>
+              <td>
+                <div class="status"><span class="status_dot offline">•</span>Offline</div>
+              </td>
+              <td>
+                <div class="join_date">
+                  <p><span class="small">Joined</span><br>3 hours ago</p>
                 </div>
               </td>
             </tr>
@@ -109,35 +166,75 @@
         <h2>Steps to Join</h2>
       </div>
       <div id="steps">
-        <div>
-          <div>
-            <div>
-              <div class="step_number">1</div>
-              <p>Click the link...</p>
-            </div>
-            <!-- Join button -->
+        <div class="step">
+          <div class="step_and_desc">
+            <div class="step_number">1</div>
+            <p>Click the link below to join our Discord server.</p>
           </div>
-          <div>
+          <div class="discord_join_outer">
+            <a class="button discord" href="https://discord.gg/vFW62D9">Join</a>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step_and_desc">
             <div class="step_number">2</div>
-            <p>Coeus will...</p>
+            <p>Coeus will direct message you when you join. He is bot that will teach you about the server.</p>
           </div>
-          <!-- Image -->
+          <img src="./assets/steps/step_2.png" style="width:70%;" loading="lazy">
         </div>
-        <div>
-          <div class="step_number">3</div>
-          <p>Wait 24 hours...</p>
+        <div class="step">
+          <div class="step_and_desc">
+            <div class="step_number">3</div>
+            <p>Wait 24 hours from when you first joined to get whitelisted. Coeus will let you know when he does that.</p>
+          </div>
+          <img src="./assets/steps/step_3.svg" style="width:50%;" loading="lazy">
         </div>
-        <!-- Image -->
-      </div>
-      <div id="slideshow">
-        <!-- Left button -->
-        <!-- Right button -->
-        <!-- Slideshow div? + JS -->
-      </div>
-      <div id="map_link">
-        <div>
-          <p>View the...</p>
-          <!-- map button -->
+        <div id="slideshow">
+          <div id="carousel">
+            <div><img src="./assets/slides/slide_1.png" loading="lazy"></div>
+            <div><img src="./assets/slides/slide_2.png" loading="lazy"></div>
+            <div><img src="./assets/slides/slide_3.png" loading="lazy"></div>
+            <div><img src="./assets/slides/slide_4.png" loading="lazy"></div>
+          </div>
+          <svg class="prev" viewBox="0 0 8 19" xmlns="http://www.w3.org/2000/svg" stroke-width="2" onclick="slideshow.prev()">
+            <g transform="matrix(1,0,0,1,-8.89417,-2.8901)">
+              <g transform="matrix(-0.828255,0,0,1.15763,25.6375,-1.89154)">
+                <path d="M12,5L19,12L12,19">
+              </g>
+            </g>
+          </svg>
+          <svg class="next" viewBox="0 0 8 19" xmlns="http://www.w3.org/2000/svg" stroke-width="2" onclick="slideshow.next()">
+            <g transform="matrix(1,0,0,1,-8.89417,-2.8901)">
+              <g transform="matrix(-0.828255,0,0,1.15763,25.6375,-1.89154)">
+                <path d="M12,5L19,12L12,19">
+              </g>
+            </g>
+          </svg>
+        </div>
+        <script>
+          const slideshow = new Siema({
+            selector: '#carousel',
+            duration: 500,
+            easing: 'ease-out',
+            perPage: 1,
+            startIndex: 0,
+            draggable: true,
+            multipleDrag: true,
+            threshold: 20,
+            loop: true,
+          });
+
+          setInterval(() => slideshow.next(), 8000)
+        </script>
+        <div id="map_link">
+          <div>
+            <p>View the auto-updating online map with live player locations.</p>
+            <a class="button map" href="../map"><span class="full">Open Map</span>
+              <span class="short">Map</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 11l-1 1 1 1 1-1-1-1zm0-9a10 10 0 100 20 10 10 0 000-20zm2 12l-8 4 4-8 8-4-4 8z" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>

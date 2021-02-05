@@ -1,0 +1,33 @@
+#map_link {
+  border-radius: 1rem;
+  padding: 2rem 7rem 2rem 7rem;
+  background-color: green;
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(../../assets/map_link.png);
+  background-size: cover;
+}
+
+#map_link > div {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: var(--grey_dark);
+  color: var(--grey_white);
+  font-size: 0.8rem;
+}
+
+#map_link > div > p {
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+#map_link > div > a.button {
+  display: block;
+  text-align: center;
+  color: black;
+  fill: black;
+}
+
+#map_link > div > a.button:hover {
+  color: white;
+  fill: white;
+  background-color: black;
+}

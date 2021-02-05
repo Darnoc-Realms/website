@@ -37,7 +37,7 @@ h5, #invitation>div>div>p {
   color: #33EB6C;
 }
 
-.status_dot.offline {
+.status_dot.down {
   color: #EB4133;
 }
 

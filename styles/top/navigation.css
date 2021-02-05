@@ -29,13 +29,13 @@ a.button > svg {
 a.button.github {
   fill: white;
   color: white;
-  background-color: black;
+  background-color: #24292e;
 }
 
 a.button.github:hover {
-  fill: black;
-  color: black;
-  background-color: var(--grey_light);
+  fill: white;
+  color: white;
+  background-color: black;
 }
 
 a.button.map {
@@ -51,7 +51,7 @@ a.button.map > svg {
 a.button.map:hover {
   fill: white;
   color: white;
-  background-color: var(--purple);
+  background-color: var(--purple_dark);
 }
 
 @media only screen and (min-width: 600px) and (orientation: portrait) {
