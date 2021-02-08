@@ -2,12 +2,34 @@ h2 {
   text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: var(--font_weight_medium);
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #member_count {
   font-weight: var(--font_weight_thin);
   color: var(--grey_light);
   text-transform: none;
+}
+
+@media (max-width: 770px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 410px) and (orientation: portrait) {
+  #member_count {
+    font-size: 0.7rem;
+  }
+}
+
+#members_header {
+  order: 1;
+  grid-column: 1;
+}
+
+#steps_header {
+  order: 1;
+  grid-column: 2;
 }

@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="refresh" content="1800">
 
 
     <!-- Styles -->
@@ -32,20 +33,20 @@
 
     <!-- Scripts -->
     <script src="./scripts/imports/siema.min.js"></script>
-
+    <script src="./scripts/imports/friendly-time.js"></script>
 
     <!-- Favicon Stuffs -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/_favicons/apple-touch-icon.png?v=lkv9oMRXnj">
-    <link rel="icon" type="image/png" sizes="32x32" href="/_favicons/favicon-32x32.png?v=lkv9oMRXnj">
-    <link rel="icon" type="image/png" sizes="16x16" href="/_favicons/favicon-16x16.png?v=lkv9oMRXnj">
-    <link rel="manifest" href="/_favicons/site.webmanifest?v=lkv9oMRXnj">
-    <link rel="mask-icon" href="/_favicons/safari-pinned-tab.svg?v=lkv9oMRXnj" color="#4f0e66">
-    <link rel="shortcut icon" href="/_favicons/favicon.ico?v=lkv9oMRXnj">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png?v=lkv9oMRXnj">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png?v=lkv9oMRXnj">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png?v=lkv9oMRXnj">
+    <link rel="manifest" href="./assets/favicons/site.webmanifest?v=lkv9oMRXnj">
+    <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg?v=lkv9oMRXnj" color="#4f0e66">
+    <link rel="shortcut icon" href="./assets/favicons/favicon.ico?v=lkv9oMRXnj">
     <meta name="apple-mobile-web-app-title" content="Darnoc Realms">
     <meta name="application-name" content="Darnoc Realms">
-    <meta name="msapplication-TileColor" content="#5E22CA">
-    <meta name="msapplication-config" content="/_favicons/browserconfig.xml?v=lkv9oMRXnj">
-    <meta name="theme-color" content="#5E22CA">
+    <meta name="msapplication-TileColor" content="#803A98">
+    <meta name="msapplication-config" content="./assets/favicons/browserconfig.xml?v=lkv9oMRXnj">
+    <meta name="theme-color" content="#803A98">
 
 
     <!-- SEO Stuff -->
@@ -75,15 +76,16 @@
       </div>
       <div id="title">
         <h1><span class="bold">Darnoc</span> Realms</h1>
-        <p>An up-to-date open source semi-vanilla Minecraft survival server open to all</p>
+        <p>An up-to-date open source semi-vanilla Minecraft survival server<span class="full"> open to all</span></p>
       </div>
       <div id="invitation">
         <div class="inner_row">
           <img class="icon" src="./assets/icon_borderless.png">
           <div>
             <h5>Darnoc Realms</h5>
-            <p><span class="status_dot online">•</span> Online <span class="thin">- 1.16.5</p>
+            <p><span class="status_dot online" id="server_status_dot">•</span> <span id="server_status_message">Online</span> <span class="thin" id="server_status_version">- 1.16.5</span></p>
           </div>
+          <script src="./scripts/server_status.js"></script>
         </div>
         <a class="button discord" href="https://discord.gg/vFW62D9">Join With Discord<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
             <path class="st0" d="M104 104c-5 0-10 5-10 11s5 11 10 11c6 0 11-5 11-11s-5-11-11-11zm37 0c-6 0-10 5-10 11s4 11 10 11 10-5 10-11-4-11-10-11z" />
@@ -93,14 +95,22 @@
       </div>
     </div>
 
-
-    <div id="content">
-      <div class="header">
-        <h2>Server Members <span id="member_count">(2/3 Online)</span></h2>
+    <main>
+      <div class="header" id="members_header">
+        <h2>Server Members <span id="member_count">(0/0 online)</span></h2>
       </div>
       <div id="member_list">
         <table>
-          <tbody>
+          <colgroup>
+            <col span="1" style="min-width: 2rem; width: 1%;">
+            <col span="1" style="width: 10%;">
+            <col span="1" style="min-width: 15rem; width: 20%;">
+            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 12%;">
+          </colgroup>
+          <tbody id="member_table">
+            <!-- TABLE ROWS ARE ADDED ON PAGE LOAD FROM API -->
+            <!-- EXAMPLE
             <tr>
               <td>
                 <img class="player_avatar" src="https://mc-heads.net/avatar/venashial" loading="lazy">
@@ -109,9 +119,9 @@
                 <div class="name_and_badge">
                   <h4>venashial</h4>
                   <div class="badges">
-                  <div class="badge grey">ADMIN</div>
-                  <div class="badge purple">MEMBER</div>
-                </div>
+                    <div class="badge grey">ADMIN</div>
+                    <div class="badge purple">MEMBER</div>
+                  </div>
                 </div>
               </td>
               <td>
@@ -122,53 +132,12 @@
                   <p><span class="small">Joined</span><br>1.2 years<span class="full"> ago</span></p>
                 </div>
               </td>
-            </tr>
-            <tr>
-              <td>
-                <img class="player_avatar" src="https://mc-heads.net/avatar/thunderboltt" loading="lazy">
-              </td>
-              <td>
-                <div class="name_and_badge">
-                  <h4>thunderboltt</h4>
-                  <div class="badges">
-                  <div class="badge purple">MEMBER</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="status"><span class="status_dot online">•</span>Online</div>
-              </td>
-              <td>
-                <div class="join_date">
-                  <p><span class="small">Joined</span><br>4 months<span class="full"> ago</span></p>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img class="player_avatar" src="https://mc-heads.net/avatar/jprentice" loading="lazy">
-              </td>
-              <td>
-                <div class="name_and_badge">
-                  <h4>jprentice</h4>
-                  <div class="badges">
-                  <div class="badge green">JOINING</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="status"><span class="status_dot offline">•</span>Offline</div>
-              </td>
-              <td>
-                <div class="join_date">
-                  <p><span class="small">Joined</span><br>3 hours<span class="full"> ago</span></p>
-                </div>
-              </td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
+        <script src="./scripts/generation.js"></script>
       </div>
-      <div class="header">
+      <div class="header" id="steps_header">
         <h2>Steps to Join</h2>
       </div>
       <div id="steps">
@@ -195,78 +164,73 @@
           </div>
           <img src="./assets/steps/step_3.svg" style="width:50%;" loading="lazy">
         </div>
-        <div id="slideshow">
-          <div id="carousel">
-            <div><img src="./assets/slides/slide_1.png" loading="lazy"></div>
-            <div><img src="./assets/slides/slide_2.png" loading="lazy"></div>
-            <div><img src="./assets/slides/slide_3.png" loading="lazy"></div>
-            <div><img src="./assets/slides/slide_4.png" loading="lazy"></div>
-          </div>
-          <svg class="prev" viewBox="0 0 8 19" xmlns="http://www.w3.org/2000/svg" stroke-width="2" onclick="slideshow.prev()">
-            <g transform="matrix(1,0,0,1,-8.89417,-2.8901)">
-              <g transform="matrix(-0.828255,0,0,1.15763,25.6375,-1.89154)">
-                <path d="M12,5L19,12L12,19">
-              </g>
-            </g>
-          </svg>
-          <svg class="next" viewBox="0 0 8 19" xmlns="http://www.w3.org/2000/svg" stroke-width="2" onclick="slideshow.next()">
-            <g transform="matrix(1,0,0,1,-8.89417,-2.8901)">
-              <g transform="matrix(-0.828255,0,0,1.15763,25.6375,-1.89154)">
-                <path d="M12,5L19,12L12,19">
-              </g>
-            </g>
-          </svg>
+      </div>
+      <div id="slideshow">
+        <div id="carousel">
+          <div><img src="./assets/slides/slide_1.png" loading="lazy"></div>
+          <div><img src="./assets/slides/slide_2.png" loading="lazy"></div>
+          <div><img src="./assets/slides/slide_3.png" loading="lazy"></div>
+          <div><img src="./assets/slides/slide_4.png" loading="lazy"></div>
         </div>
-        <script>
-          const slideshow = new Siema({
-            selector: '#carousel',
-            duration: 500,
-            easing: 'ease-out',
-            perPage: 1,
-            startIndex: 0,
-            draggable: true,
-            multipleDrag: true,
-            threshold: 20,
-            loop: true,
-          });
+        <svg class="prev" viewBox="0 0 8 19" xmlns="http://www.w3.org/2000/svg" stroke-width="2" onclick="slideshow.prev()">
+          <g transform="matrix(1,0,0,1,-8.89417,-2.8901)">
+            <g transform="matrix(-0.828255,0,0,1.15763,25.6375,-1.89154)">
+              <path d="M12,5L19,12L12,19">
+            </g>
+          </g>
+        </svg>
+        <svg class="next" viewBox="0 0 8 19" xmlns="http://www.w3.org/2000/svg" stroke-width="2" onclick="slideshow.next()">
+          <g transform="matrix(1,0,0,1,-8.89417,-2.8901)">
+            <g transform="matrix(-0.828255,0,0,1.15763,25.6375,-1.89154)">
+              <path d="M12,5L19,12L12,19">
+            </g>
+          </g>
+        </svg>
+      </div>
+      <script>
+        const slideshow = new Siema({
+          selector: '#carousel',
+          duration: 500,
+          easing: 'ease-out',
+          perPage: 1,
+          startIndex: 0,
+          draggable: true,
+          multipleDrag: true,
+          threshold: 20,
+          loop: true,
+        });
 
-          setInterval(() => slideshow.next(), 10000)
-        </script>
-        <div id="map_link">
-          <div>
-            <p>View the auto-updating online map with live player locations.</p>
-            <a class="button map" href="../map"><span class="full">Open Map</span>
-              <span class="short">Map</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M12 11l-1 1 1 1 1-1-1-1zm0-9a10 10 0 100 20 10 10 0 000-20zm2 12l-8 4 4-8 8-4-4 8z" />
-              </svg>
-            </a>
-          </div>
+        setInterval(() => slideshow.next(), 10000)
+      </script>
+      <div id="map_link">
+        <div>
+          <p>View the auto-updating online map with live player locations.</p>
+          <a class="button map" href="../map"><span class="full">Open Map</span>
+            <span class="short">Map</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 11l-1 1 1 1 1-1-1-1zm0-9a10 10 0 100 20 10 10 0 000-20zm2 12l-8 4 4-8 8-4-4 8z" />
+            </svg>
+          </a>
         </div>
       </div>
-    </div>
 
-
-    <div id="footer">
-      <div class="footer_links">
+      <div id="footer_links">
         <div>
           <p>APIs</p>
-          <a href="https://api.darnoc-realms.ml/v1/members">api.darnoc-realms.ml/v1/members</a>
-          <a href="https://api.darnoc-realms.ml/v1/world">api.darnoc-realms.ml/v1/world</a>
-          <a href="https://api.darnoc-realms.ml/v1/backups">api.darnoc-realms.ml/v1/backups</a>
-          <a href="https://api.darnoc-realms.ml/v1/discord">api.darnoc-realms.ml/v1/discord</a>
-          <a href="https://api.darnoc-realms.ml/v1/server">api.darnoc-realms.ml/v1/server</a>
+          <a href="https://api.darnoc-realms.ml/v1/players/">api.darnoc-realms.ml/v1/players/</a>
+          <a href="https://api.darnoc-realms.ml/v1/world/">api.darnoc-realms.ml/v1/world/</a>
+          <a href="https://api.darnoc-realms.ml/v1/backups/">api.darnoc-realms.ml/v1/backups/</a>
+          <a href="https://api.darnoc-realms.ml/v1/discord/">api.darnoc-realms.ml/v1/discord/</a>
+          <a href="https://api.darnoc-realms.ml/v1/server/">api.darnoc-realms.ml/v1/server/</a>
         </div>
         <div>
           <p>Source Code</p>
-          <a href="https://github.com/Darnoc-Realms/website">github.com/darnoc-realms/website</a>
-          <a href="https://github.com/Darnoc-Realms/coeus">github.com/darnoc-realms/coeus</a>
-          <a href="https://github.com/Darnoc-Realms/api">github.com/darnoc-realms/api</a>
+          <a href="https://github.com/Darnoc-Realms/website/">github.com/darnoc-realms/website/</a>
+          <a href="https://github.com/Darnoc-Realms/coeus/">github.com/darnoc-realms/coeus/</a>
         </div>
         <div>
           <p>Report Issues</p>
-          <a href="https://github.com/Darnoc-Realms/website/issues">Website</a>
-          <a href="https://github.com/Darnoc-Realms/coeus/issues">Coeus (Discord bot)</a>
-          <a href="https://github.com/Darnoc-Realms/api/issues">API</a>
+          <a href="https://github.com/Darnoc-Realms/website/issues/">Website</a>
+          <a href="https://github.com/Darnoc-Realms/coeus/issues/">Coeus (Discord bot)</a>
         </div>
         <div>
           <p>Help</p>
@@ -274,7 +238,7 @@
           <a href="mailto:admin@darnoc-realms.ml">Email</a>
         </div>
       </div>
-    </div>
+    </main>
     <script> </script> <!-- to stop css animation flash on page load -->
 </body>
 

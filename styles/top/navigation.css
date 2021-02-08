@@ -69,7 +69,7 @@ a.button.map:hover {
   }
 }
 
-@media only screen and (max-width: 400px) and (orientation: portrait) {
+@media only screen and (max-width: 420px) and (orientation: portrait) {
   a.button.github, a.button.map {
     font-size: 1.2rem;
   }
@@ -78,5 +78,11 @@ a.button.map:hover {
     height: 1.1rem;
     margin-left: 0.7rem;
     margin-top: 0rem;
+  }
+}
+
+@media only screen and (max-width: 380px) and (orientation: portrait) {
+  a.button > svg {
+display: none;
   }
 }

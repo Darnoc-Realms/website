@@ -23,14 +23,27 @@ h1 {
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 750px) and (orientation: portrait) {
+@media only screen and (max-width: 760px) {
   #title {
     width: 95vw;
     margin-left: 2.5vw;
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 
   h1 {
-  font-size: 2.2rem;
+  font-size: 3rem;
+  }
+
+  #top {
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 490px) and (orientation: portrait) {
+  #title {
+    margin-top: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
   }
 }

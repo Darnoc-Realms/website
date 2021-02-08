@@ -1,5 +1,6 @@
 #slideshow {
-  overflow: hidden;
+  order: 3;
+  grid-column: 1;
 }
 
 #slideshow > svg {
@@ -14,6 +15,8 @@
   z-index: 10;
   cursor: pointer;
   top: -9rem;
+
+  display: none;
 }
 
 .prev {
@@ -27,23 +30,34 @@
 
 #carousel {
   border-radius: 1rem;
+  height: calc((100vw - 2rem) * 0.5625);
+}
+
+#carousel > div {
+  height: inherit;
+}
+
+#carousel > div > div {
+  height: inherit;
+}
+
+
+#carousel > div > div > div {
+  height: inherit;
 }
 
 #carousel > div > div > div > img {
-  width: 30rem;
-  border-radius: 1rem;
-  height: auto;
+  width: 100%;
+  height: inherit;
+}
+
+@media (min-width: 770px) {
+  #carousel {
+    height: 100%;
+  }
 }
 
 @media only screen and (max-width: 700px) and (orientation: portrait) {
-  #slideshow {
-    width: 100%;
-  }
-
-  #carousel > div > div > div > img {
-    width: 100%;
-  }
-
   #slideshow > svg {
     top: -30vw;
   }

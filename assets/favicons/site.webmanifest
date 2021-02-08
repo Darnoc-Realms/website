@@ -1,0 +1,15 @@
+{
+    "name": "Darnoc Realms",
+    "short_name": "Darnoc Realms",
+    "icons": [
+        {
+            "src": "/_favicons/android-chrome-192x192.png?v=lkv9oMRXnj",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#5E22CA",
+    "background_color": "#5E22CA",
+    "start_url": "https://www.darnoc-realms.ml/#/",
+    "display": "standalone"
+}
