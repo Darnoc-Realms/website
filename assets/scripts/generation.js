@@ -48,7 +48,7 @@ function get_members_api() {
 }
 
 function get_discord_api() {
-  fetch(`https://jsonp.afeld.me/?url=https%3A%2F%2Fdiscord.com%2Fapi%2Fguilds%2F729961633258012675%2Fwidget.json`)
+  fetchJsonp(`https://jsonp.afeld.me/?url=https%3A%2F%2Fdiscord.com%2Fapi%2Fguilds%2F729961633258012675%2Fwidget.json`)
     .then(resp => resp.json())
     .then(data => data.members)
     .then(function(api_members) {
