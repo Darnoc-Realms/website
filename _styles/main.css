@@ -9,6 +9,8 @@
   --grey_medium: #EAEAEA;
   --grey_dark: rgba(31, 31, 31, 0.8);
   --grey_container: #7B7B7B;
+  --blue_light: #6565c5;
+  --blue_dark: #4f4fa6;
   /* Fonts */
   --font_size: 20px;
   --font_family: Kumbh Sans, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -35,6 +37,10 @@ p {
   display: none;
 }
 
+.bold {
+  font-weight: var(--font_weight_bold);
+}
+
 @media only screen and (max-width: 800px) {
   .short {
     display: inline-block;
@@ -53,7 +59,7 @@ p {
 
 #top {
   background-color: var(--purple_light);
-  background: linear-gradient(0deg, rgba(167, 167, 167, 0.2), rgba(167, 167, 167, 0.2)), url(../assets/brick_tile.png);
+  background: linear-gradient(0deg, rgba(167, 167, 167, 0.2), rgba(167, 167, 167, 0.2)), url(../_assets/brick_tile.png);
   image-rendering: crisp-edges;
   background-repeat: repeat;
   background-attachment: fixed;

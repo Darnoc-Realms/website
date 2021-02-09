@@ -1,0 +1,9 @@
+iframe#map {
+  border: none;
+  width: 100%;
+  height: 94vh;
+}
+
+html {
+  overflow-y: hidden;
+}

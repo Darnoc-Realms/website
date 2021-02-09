@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <head>
+    <title>Map - Darnoc Realms</title>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="refresh" content="1800">
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../_styles/normalize.css">
+    <link rel="stylesheet" href="../_styles/fonts.css">
+    <link rel="stylesheet" href="../_styles/main.css">
+
+    <link rel="stylesheet" href="../_styles/top/navigation.css">
+
+    <link rel="stylesheet" href="../_styles/nav_bar.css">
+
+    <link rel="stylesheet" href="../_styles/backups/backups_list.css">
+
+    <!-- Scripts -->
+    <script src="../_scripts/imports/friendly-time.js"></script>
+
+    <!-- Favicon Stuffs -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../_assets/favicons/apple-touch-icon.png?v=lkv9oMRXnj">
+    <link rel="icon" type="image/png" sizes="32x32" href="../_assets/favicons/favicon-32x32.png?v=lkv9oMRXnj">
+    <link rel="icon" type="image/png" sizes="16x16" href="../_assets/favicons/favicon-16x16.png?v=lkv9oMRXnj">
+    <link rel="manifest" href="../_assets/favicons/site.webmanifest?v=lkv9oMRXnj">
+    <link rel="mask-icon" href="../_assets/favicons/safari-pinned-tab.svg?v=lkv9oMRXnj" color="#4f0e66">
+    <link rel="shortcut icon" href="../_assets/favicons/favicon.ico?v=lkv9oMRXnj">
+    <meta name="apple-mobile-web-app-title" content="Darnoc Realms">
+    <meta name="application-name" content="Darnoc Realms">
+    <meta name="msapplication-TileColor" content="#803A98">
+    <meta name="msapplication-config" content="../_assets/favicons/browserconfig.xml?v=lkv9oMRXnj">
+    <meta name="theme-color" content="#803A98">
+
+
+    <!-- SEO Stuff -->
+    <meta property="og:title" content="Download the Server Backups">
+    <meta property="og:site_name" content="Darnoc Realms">
+    <meta property="og:description" content="View the currently available backups!">
+    <meta property="og:image" content="https://www.darnoc-realms.ml/_assets/icon_bordless.png">
+    <meta name="twitter:card" content="summary">
+  </head>
+
+<body>
+  <div id="nav_bar">
+    <a class="button home" href="../">
+      Home <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+      </svg>
+    </a>
+    <div class="title_small">
+      <h1><span class="bold">Darnoc</span> Realms</h1>
+    </div>
+  </div>
+  <main>
+    <div class="header" id="backups_header">
+      <h2>Backups <span id="backup_count">(2 total)</span></h2>
+    </div>
+    <div id="backups_list">
+      <table>
+        <tbody id="backups_table">
+          <!-- TABLE ROWS ARE ADDED ON PAGE LOAD FROM API -->
+          <!-- EXAMPLE
+          <tr>
+            <td>
+              <h3 class="date">August 8, 2020 11:29</h3>
+            </td>
+            <td>
+                <h3 class="relative_date">3 hours ago</h3>
+            </td>
+            <td class="download" onclick="window.open('/page2', '_blank')">
+              <h3>Download<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></h3>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+      <script src="../_scripts/backups.js"></script>
+    </div>
+  </main>
+  <script> </script> <!-- to stop css animation flash on page load -->
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 #map_link {
   border-radius: 1rem;
   background-color: green;
-  background: linear-gradient(0deg, rgba(200, 200, 200, 0.4), rgba(200, 200, 200, 0.4)), url(../../assets/map_link.png);
+  background: linear-gradient(0deg, rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2)), url(../../_assets/map_link.png);
   background-size: cover;
 
   order: 3;

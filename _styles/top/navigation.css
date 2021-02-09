@@ -17,13 +17,13 @@ a.button {
   text-decoration: none;
 }
 
-a.button > svg {
+a.button>svg {
   width: 1.25rem;
   height: 1.25rem;
   display: inline;
   vertical-align: top;
   margin-left: 0.7rem;
-  margin-top: -0.1rem;
+  margin-top: 0rem;
 }
 
 a.button.github {
@@ -44,8 +44,8 @@ a.button.map {
   background-color: white;
 }
 
-a.button.map > svg {
-  transform: scale(1.2, 1.2);
+a.button.map>svg, a.button.backups>svg {
+  transform: scale(1.2, 1.2) translateY(-0.05rem);
 }
 
 a.button.map:hover {
@@ -54,17 +54,37 @@ a.button.map:hover {
   background-color: var(--purple_dark);
 }
 
+a.button.backups {
+  fill: white;
+  color: white;
+  background-color: var(--blue_light);
+}
+
+a.button.backups:hover {
+  fill: white;
+  color: white;
+  background-color: var(--blue_dark);
+}
+
+@media only screen and (max-width: 860px) and (orientation: portrait) {
+  a.button.backups {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 800px) and (orientation: portrait) {
   a.button.github, a.button.map {
     font-size: 1.5rem;
   }
-  a.button > svg {
+
+  a.button>svg {
     width: 1.5rem;
     height: 1.5rem;
     margin-left: 0.7rem;
     margin-top: -0.1rem;
   }
-  a.button.map > svg {
+
+  a.button.map>svg {
     transform: scale(1.2, 1.2) translateY(0.1rem);
   }
 }
@@ -73,7 +93,8 @@ a.button.map:hover {
   a.button.github, a.button.map {
     font-size: 1.2rem;
   }
-  a.button > svg {
+
+  a.button>svg {
     width: 1.1rem;
     height: 1.1rem;
     margin-left: 0.7rem;
@@ -82,7 +103,7 @@ a.button.map:hover {
 }
 
 @media only screen and (max-width: 380px) and (orientation: portrait) {
-  a.button > svg {
-display: none;
+  a.button>svg {
+    display: none;
   }
 }

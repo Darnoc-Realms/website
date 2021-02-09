@@ -15,37 +15,37 @@
 
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="_styles/normalize.css">
+    <link rel="stylesheet" href="_styles/fonts.css">
+    <link rel="stylesheet" href="_styles/main.css">
 
-    <link rel="stylesheet" href="styles/top/navigation.css">
-    <link rel="stylesheet" href="styles/top/title.css">
-    <link rel="stylesheet" href="styles/top/invite.css">
+    <link rel="stylesheet" href="_styles/top/navigation.css">
+    <link rel="stylesheet" href="_styles/top/title.css">
+    <link rel="stylesheet" href="_styles/top/invite.css">
 
-    <link rel="stylesheet" href="styles/content/header.css">
-    <link rel="stylesheet" href="styles/content/member_list.css">
-    <link rel="stylesheet" href="styles/content/steps.css">
-    <link rel="stylesheet" href="styles/content/slideshow.css">
-    <link rel="stylesheet" href="styles/content/map_link.css">
+    <link rel="stylesheet" href="_styles/content/header.css">
+    <link rel="stylesheet" href="_styles/content/member_list.css">
+    <link rel="stylesheet" href="_styles/content/steps.css">
+    <link rel="stylesheet" href="_styles/content/slideshow.css">
+    <link rel="stylesheet" href="_styles/content/map_link.css">
 
-    <link rel="stylesheet" href="styles/footer/links.css">
+    <link rel="stylesheet" href="_styles/footer/links.css">
 
     <!-- Scripts -->
-    <script src="./scripts/imports/siema.min.js"></script>
-    <script src="./scripts/imports/friendly-time.js"></script>
+    <script src="./_scripts/imports/siema.min.js"></script>
+    <script src="./_scripts/imports/friendly-time.js"></script>
 
     <!-- Favicon Stuffs -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png?v=lkv9oMRXnj">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png?v=lkv9oMRXnj">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png?v=lkv9oMRXnj">
-    <link rel="manifest" href="./assets/favicons/site.webmanifest?v=lkv9oMRXnj">
-    <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg?v=lkv9oMRXnj" color="#4f0e66">
-    <link rel="shortcut icon" href="./assets/favicons/favicon.ico?v=lkv9oMRXnj">
+    <link rel="apple-touch-icon" sizes="180x180" href="./_assets/favicons/apple-touch-icon.png?v=lkv9oMRXnj">
+    <link rel="icon" type="image/png" sizes="32x32" href="./_assets/favicons/favicon-32x32.png?v=lkv9oMRXnj">
+    <link rel="icon" type="image/png" sizes="16x16" href="./_assets/favicons/favicon-16x16.png?v=lkv9oMRXnj">
+    <link rel="manifest" href="./_assets/favicons/site.webmanifest?v=lkv9oMRXnj">
+    <link rel="mask-icon" href="./_assets/favicons/safari-pinned-tab.svg?v=lkv9oMRXnj" color="#4f0e66">
+    <link rel="shortcut icon" href="./_assets/favicons/favicon.ico?v=lkv9oMRXnj">
     <meta name="apple-mobile-web-app-title" content="Darnoc Realms">
     <meta name="application-name" content="Darnoc Realms">
     <meta name="msapplication-TileColor" content="#803A98">
-    <meta name="msapplication-config" content="./assets/favicons/browserconfig.xml?v=lkv9oMRXnj">
+    <meta name="msapplication-config" content="./_assets/favicons/browserconfig.xml?v=lkv9oMRXnj">
     <meta name="theme-color" content="#803A98">
 
 
@@ -53,7 +53,7 @@
     <meta property="og:title" content="Welcome to Darnoc Realms">
     <meta property="og:site_name" content="Darnoc Realms">
     <meta property="og:description" content="Darnoc Realms is a SMP Minecraft server. Find out more on our website!">
-    <meta property="og:image" content="https://www.darnoc-realms.ml/assets/icon_bordless.png">
+    <meta property="og:image" content="https://www.darnoc-realms.ml/_assets/icon_bordless.png">
     <meta property="og:url" content="https://www.darnoc-realms.ml/">
     <meta name="twitter:card" content="summary">
   </head>
@@ -62,13 +62,19 @@
   <div id="root">
     <div id="top">
       <div id="navigation">
+        <a class="button backups" href="/backups/"><span class="full">Open Backups</span>
+          <span class="short">Backups</span><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z" />
+          </svg>
+        </a>
         <a class="button github" href="https://github.com/Darnoc-Realms"><span class="full">View Github</span>
           <span class="short">Github</span><svg viewBox="0 0 136 133" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
             <path
               d="M68 0a68 68 0 00-22 132c4 1 5-1 5-3v-12c-19 5-23-9-23-9-3-7-7-10-7-10-7-4 0-4 0-4 7 1 10 7 10 7 6 11 16 8 20 6l4-9c-15-2-30-8-30-34 0-7 2-13 7-18-1-2-3-9 0-18 0 0 6-2 19 7a65 65 0 0134 0c13-9 19-7 19-7 3 9 1 16 0 18 5 5 7 11 7 18 0 26-16 32-31 34 3 2 5 6 5 12v19c0 2 1 4 4 3A68 68 0 0068 0" />
           </svg>
         </a>
-        <a class="button map" href="../map"><span class="full">Open Map</span>
+        <a class="button map" href="../map"><span class="full">Explore Map</span>
           <span class="short">Map</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M12 11l-1 1 1 1 1-1-1-1zm0-9a10 10 0 100 20 10 10 0 000-20zm2 12l-8 4 4-8 8-4-4 8z" />
           </svg>
@@ -80,12 +86,12 @@
       </div>
       <div id="invitation">
         <div class="inner_row">
-          <img class="icon" src="./assets/icon_borderless.png">
+          <img class="icon" src="./_assets/icon_borderless.png">
           <div>
             <h5>Darnoc Realms</h5>
             <p><span class="status_dot online" id="server_status_dot">•</span> <span id="server_status_message">Online</span> <span class="thin" id="server_status_version">- 1.16.5</span></p>
           </div>
-          <script src="./scripts/server_status.js"></script>
+          <script src="./_scripts/server_status.js"></script>
         </div>
         <a class="button discord" href="https://discord.gg/vFW62D9">Join With Discord<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
             <path class="st0" d="M104 104c-5 0-10 5-10 11s5 11 10 11c6 0 11-5 11-11s-5-11-11-11zm37 0c-6 0-10 5-10 11s4 11 10 11 10-5 10-11-4-11-10-11z" />
@@ -104,7 +110,7 @@
           <colgroup>
             <col span="1" style="min-width: 2rem; width: 1%;">
             <col span="1" style="width: 10%;">
-            <col span="1" style="min-width: 15rem; width: 20%;">
+            <col span="1" style="min-width: 6rem; width: 20%;">
             <col span="1" style="width: 20%;">
             <col span="1" style="width: 12%;">
           </colgroup>
@@ -135,7 +141,7 @@
             </tr> -->
           </tbody>
         </table>
-        <script src="./scripts/generation.js"></script>
+        <script src="./_scripts/generation.js"></script>
       </div>
       <div class="header" id="steps_header">
         <h2>Steps to Join</h2>
@@ -155,22 +161,22 @@
             <div class="step_number">2</div>
             <p>Coeus will direct message you when you join. He is bot that will teach you about the server.</p>
           </div>
-          <img src="./assets/steps/step_2.png" style="width:70%;" loading="lazy">
+          <img src="./_assets/steps/step_2.png" style="width:70%;" loading="lazy">
         </div>
         <div class="step">
           <div class="step_and_desc">
             <div class="step_number">3</div>
             <p>Wait 24 hours from when you first joined to get whitelisted. Coeus will let you know when he does that.</p>
           </div>
-          <img src="./assets/steps/step_3.svg" style="width:50%;" loading="lazy">
+          <img src="./_assets/steps/step_3.svg" style="width:50%;" loading="lazy">
         </div>
       </div>
       <div id="slideshow">
         <div id="carousel">
-          <div><img src="./assets/slides/slide_1.png" loading="lazy"></div>
-          <div><img src="./assets/slides/slide_2.png" loading="lazy"></div>
-          <div><img src="./assets/slides/slide_3.png" loading="lazy"></div>
-          <div><img src="./assets/slides/slide_4.png" loading="lazy"></div>
+          <div><img src="./_assets/slides/slide_1.png" loading="lazy"></div>
+          <div><img src="./_assets/slides/slide_2.png" loading="lazy"></div>
+          <div><img src="./_assets/slides/slide_3.png" loading="lazy"></div>
+          <div><img src="./_assets/slides/slide_4.png" loading="lazy"></div>
         </div>
         <svg class="prev" viewBox="0 0 8 19" xmlns="http://www.w3.org/2000/svg" stroke-width="2" onclick="slideshow.prev()">
           <g transform="matrix(1,0,0,1,-8.89417,-2.8901)">
