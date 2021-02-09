@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--purple_light);
-  background: linear-gradient(0deg, rgba(167, 167, 167, 0.2), rgba(167, 167, 167, 0.2)), url(../_assets/brick_tile.png);
+  background: linear-gradient(0deg, rgba(167, 167, 167, 0.2), rgba(167, 167, 167, 0.2)), url(../images/brick_tile.png);
   image-rendering: crisp-edges;
   background-repeat: repeat;
   background-attachment: fixed;
