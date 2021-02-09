@@ -48,7 +48,7 @@ function get_members_api() {
 }
 
 function get_discord_api() {
-  fetch(`https://api.darnoc-realms.ml/v1/discord/`)
+  fetch(`https://discord.com/api/guilds/729961633258012675/widget.json`)
     .then(resp => resp.json())
     .then(data => data.members)
     .then(function(api_members) {
