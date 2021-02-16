@@ -3,7 +3,6 @@
 
 <head>
 
-  <head>
     <title>Map - Darnoc Realms</title>
 
     <!-- Meta -->
@@ -48,7 +47,7 @@
     <meta property="og:description" content="View the currently available backups!">
     <meta property="og:image" content="https://www.darnoc-realms.ml/assets/images/icon_bordless.png">
     <meta name="twitter:card" content="summary">
-  </head>
+</head>
 
 <body>
   <div id="nav_bar">
@@ -64,30 +63,11 @@
   </div>
   <main>
     <div class="header" id="backups_header">
-      <h2>Backups <span id="backup_count">(2 total)</span></h2>
+      <h2>Backups</h2>
     </div>
-    <div id="backups_list">
-      <table>
-        <tbody id="backups_table">
-          <!-- TABLE ROWS ARE ADDED ON PAGE LOAD FROM API -->
-          <!-- EXAMPLE
-          <tr>
-            <td>
-              <h3 class="date">August 8, 2020 11:29</h3>
-            </td>
-            <td>
-                <h3 class="relative_date">3 hours ago</h3>
-            </td>
-            <td class="download" onclick="window.open('/page2', '_blank')">
-              <h3>Download<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></h3>
-            </td>
-          </tr> -->
-        </tbody>
-      </table>
-      <script src="../assets/scripts/backups.js"></script>
-    </div>
+    <iframe id="backups_list" src="https://drive.google.com/embeddedfolderview?id=1M86hMlnQhyWAkhUA6O0c2iw3JX_8_G3j#list"></iframe>
+    <p class="help">Click on a backup above to view it in Google Drive. Once there, click the download icon in the upper right corner.</p>
   </main>
   <script> </script> <!-- to stop css animation flash on page load -->
 </body>
-
 </html>
